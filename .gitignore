@@ -1,0 +1,34 @@
+//create a gitignore file for node
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Dependency directories
+/.pnp
+.pnp.js
+
+# Optional npm cache directory
+.npm
+
+# dotenv environment variables file
+.env
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+
+# Build output
+/dist/
+/build/
+
+# Testing
+/coverage/
+
+# OS generated files
+.DS_Store
+Thumbs.db
