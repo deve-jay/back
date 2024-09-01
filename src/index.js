@@ -6,7 +6,10 @@ dotenv.config({path: "./env"});
 
 connectDB()
 .then(()=>{
-    app.listen(process.env.PORT,()=>{
+    app.on("error",(error) => {
+        console.log(error,"error occurred ..main")
+    })
+    app.listen(process.env.PORT || 8000,()=>{
         console.log("server started at port",process.env.PORT);
     })
 })
